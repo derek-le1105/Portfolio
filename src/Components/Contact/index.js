@@ -56,10 +56,10 @@ const Contact = () => {
                             idx={15}
                         />
                     </h1>
-                    <p>
+                    {/* <p>
                         I am interested in entry level positions. Please feel
                         free to contact me below regarding any questions!
-                    </p>
+                    </p> */}
                     <div className="contact-form">
                         <form ref={refForm} onSubmit={sendEmail}>
                             <ul>
@@ -93,7 +93,6 @@ const Contact = () => {
                                         name="message"
                                         required
                                     ></textarea>
-                                    "
                                 </li>
                                 <li>
                                     <input

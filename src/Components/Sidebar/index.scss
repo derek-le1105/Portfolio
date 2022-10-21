@@ -42,11 +42,11 @@
             text-decoration: none;
 
             i{
-                transition: all 0,3s ease-out;
+                transition: all 0.3s ease-out;
             }
 
             &:hover{
-                color: #ffd700;
+                color: #F3DE8A;
 
                 svg{
                     opacity: 0;
@@ -76,23 +76,23 @@
                 }
             }
         }
-    }
 
-    a.about-link{
-        &:after{
-            content: 'ABOUT';
+        a.about-link{
+            &:after{
+                content: 'ABOUT';
+            }
         }
-    }
-
-    a.contact-link{
-        &:after{
-            content: 'CONTACT';
+    
+        a.contact-link{
+            &:after{
+                content: 'CONTACT';
+            }
         }
-    }
-
-    a.active{
-        svg{
-            color: #ffd700;
+    
+        a.active{
+            svg{
+                color: #F3DE8A;
+            }
         }
     }
 
@@ -115,7 +115,7 @@
             }
 
             &:hover svg{
-                color: #ffd700;
+                color: #F3DE8A;
             }
         }
     }
