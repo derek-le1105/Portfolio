@@ -7,20 +7,20 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 const Sidebar = () => (
     <div className="nav-bar">
         <nav>
-            <NavLink exact="true" activeclassname="active" to="/Portfolio">
+            <NavLink exact="true" activeclassname="active" to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
             </NavLink>
             <NavLink
                 activeclassname="active"
                 className="about-link"
-                to="/Portfolio/about"
+                to="/about"
             >
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
             <NavLink
                 activeclassname="active"
                 className="contact-link"
-                to="/Portfolio/contact"
+                to="/contact"
             >
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
