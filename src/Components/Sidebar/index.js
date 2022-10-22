@@ -1,28 +1,32 @@
 import './index.scss'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {
+    faHome,
+    faUser,
+    faEnvelope,
+    faFile,
+    faFolder,
+} from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
     <div className="nav-bar">
         <nav>
-            <NavLink exact="true" activeclassname="active" to="/">
+            <NavLink end to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
             </NavLink>
-            <NavLink
-                activeclassname="active"
-                className="about-link"
-                to="/about"
-            >
+            <NavLink className="about-link" to="/about">
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
-            <NavLink
-                activeclassname="active"
-                className="contact-link"
-                to="/contact"
-            >
+            <NavLink className="contact-link" to="/contact">
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+            </NavLink>
+            <NavLink className="projects-link" to="/projects">
+                <FontAwesomeIcon icon={faFolder} color="#4d4d4e" />
+            </NavLink>
+            <NavLink className="resume-link" to="/resume">
+                <FontAwesomeIcon icon={faFile} color="#4d4d4e" />
             </NavLink>
         </nav>
 
