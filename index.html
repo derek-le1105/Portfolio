@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Luther</title>
+    <title>Derek</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -20,9 +20,9 @@
 
     <!-- favicons
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
     <link rel="manifest" href="site.webmanifest">
 
 </head>
@@ -56,7 +56,7 @@
         <header class="s-header">
 
             <div class="header-mobile">
-                <span class="mobile-home-link"><a href="index.html">Luther.</a></span>
+                <span class="mobile-home-link"><a href="index.html">Home</a></span>
                 <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
             </div>
 
@@ -99,11 +99,11 @@
                         </h1>
                     </div>
 
-                    <ul class="intro-social">
+                    <!-- <ul class="intro-social">
                         <li><a href="#0">Twitter</a></li>
                         <li><a href="#0">Dribbble</a></li>
                         <li><a href="#0">Instagram</a></li>
-                    </ul>
+                    </ul> -->
 
                 </div> <!-- end intro content -->
 
@@ -121,9 +121,9 @@
 
                 <div class="row about-info wide" data-animate-block>
 
-                    <div class="column lg-6 md-12 about-info__pic-block">
-                        <img src="images/about-photo.jpg" 
-                             srcset="images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x" alt="" class="about-info__pic" data-animate-el>
+                    <div class="column lg-6 md-12 about-info__pic-block" data-animate-el>
+                        <img src="images/DSC00438.jpg" 
+                             srcset="images/DSC00438.jpg 1x, images/DSC00438.jpg 2x" alt="" class="about-info__pic" data-animate-el>
                     </div>
 
                     <div class="column lg-6 md-12">
@@ -133,11 +133,10 @@
                                 About
                             </h2>
                             <p class="attention-getter" data-animate-el>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-                                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                                velit esse cillum dolore eu fugiat nulla pariatur.
+                                Hi! My name is Derek Le and I am a recent graduate of the University of California, Riverside
+                                with a B.S in Computer Science. I enjoy developing in Python and JavaScript environments and I am 
+                                always eager to expand my skillset and knowledge to become a better developer. <br>
+
                             </p>
                             <a href="resume_derek_le.pdf" target="_blank" class="btn btn--medium u-fullwidth" data-animate-el>See Resume</a>
 
@@ -151,33 +150,47 @@
 
                         <h2 class="text-pretitle" data-animate-el>Languages/Technologies</h2>
 
-                        <ul class="skills-list h1" data-animate-el>
-                            <li>
-                                <i class="fa-brands fa-python fa-2xs"></i>
-                                <span> Python</span>
-                            </li>
-                            
-                            <li>
-                                <div class="skills-item">
-                                    <i class="fa-brands fa-java fa-2xs"></i>
-                                    <span> Java</span>
-                                </div>
-                            </li>
-                            
-                            <li>
-                                <div class="skills-item">
-                                    <i class="fa-brands fa-html5 fa-2xs"></i>
-                                    <span> HTML</span>
-                                </div>
-                            </li>
-                            
-                            <li>
-                                <div class="skills-item">
-                                    <i class="fa-brands fa-square-js fa-2xs"></i>
-                                    <span> JavaScript</span>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="skills-container">
+                            <div class="skill-item" data-animate-el >
+                                <i class="fa-brands fa-python"></i>
+                                <span>Python</span>
+                            </div>
+
+                            <div class="skill-item" data-animate-el>
+                                <i class="fa-brands fa-java"></i>
+                                <span>Java</span>
+                            </div>
+
+                            <div class="skill-item" data-animate-el>
+                                <i class="fa-brands fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+
+                            <div class="skill-item" data-animate-el>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+
+                            <div class="skill-item" data-animate-el>
+                                <i class="fa-brands fa-square-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="skill-item" data-animate-el>
+                                <i class="fa-brands fa-react"></i>
+                                <span>ReactJS</span>
+                            </div>
+
+                            <div class="skill-item" data-animate-el>
+                                <img src="images/icons/icons8-c++-50.png">
+                                <span>C++</span>
+                            </div>
+
+                            <div class="skill-item" data-animate-el>
+                                <i class="fa-brands fa-square-git"></i>
+                                <span>Git</span>
+                            </div>
+                        </div>
 
                     </div>
                 </div> <!-- end about-expertise -->
@@ -273,10 +286,10 @@
                     <div class="column lg-12" data-animate-block>
 
                         <h2 class="text-pretitle" data-animate-el>
-                            Recent Works
+                            Projects
                         </h2>
                         <p class="h1" data-animate-el>
-                            Here are some of my favorite projects I have done lately. Feel free to check them out.
+                            Down below are some of the projects that I have worked on. Feel free to check them out!
                         </p>
     
                         <ul class="folio-list row block-lg-one-half block-stack-on-1000">

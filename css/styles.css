@@ -1392,7 +1392,6 @@ small {
 
 span, .span{
     font-family: var(--font-1);
-    font-size: 50%;
 }
 
 /* blockquotes
@@ -3419,7 +3418,7 @@ img.u-pull-left {
 }
 
 .about-info__text {
-    padding     : var(--vspace-3_5) 10vw var(--vspace-2) 0;
+    padding     : var(--vspace-3_5) 10vw var(--vspace-2) 5vw;
     margin-left : -4rem;
 }
 
@@ -3439,23 +3438,42 @@ img.u-pull-left {
     padding-top : calc(6 * var(--space));
 }
 
-.about-expertise .skills-list {
-    list-style  : none;
+.about-expertise .skills-container {
     margin-top  : var(--vspace-1);
     margin-left : 0;
 }
 
-.about-expertise .skills-list li {
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap : 0.8em;
+}
+
+.skill-item{
+    display: inline-flex;
+    align-items: center;
+    background-color: #e0dfde;
+    color: #161616;
+    padding: 0.25em 1.2em;
+    border-radius: 10px;
+}
+
+.skill-item span{
+    padding-left: 10px;
+}
+
+.skill-item img {
+    height: 25px;
+    padding-right: 8px;
+    margin: 0;
+  }
+
+/* .about-expertise .skills-list li {
     display      : inline-block;
     padding : 10px;
     background-color: #2c2c2d;
     border-radius: 10px;
-}
-
-.about-expertise .skills li .skills-item span{
-    font-size: 50%;
-    color: #a1a1a2;
-}
+} */
 
 /* --------------------------------------------------------------------
  * ## about timelines
